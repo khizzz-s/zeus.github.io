@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZEUS Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/8a12675bf6.js" crossorigin="anonymous"></script>
+
+    <style>
+        /* CSS RESET */
+        body {
+            margin: 0px;
+            padding: 0px;
+            height: 2000px;
+            background: url(img/bg.jpg);
+
+            background-size: 1520px;
+            background-repeat: no-repeat;
+            background-color: rgb(225, 178, 136);
+            background-position: 0px 162px;
+
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
+        }
+
+        .header {
+            background: rgb(225, 178, 136);
+            box-sizing: inherit;
+        }
+
+        p {
+            text-decoration: none;
+            text-align: center;
+            padding: 10px 380px;
+            font-size: 14px;
+            margin: 0px;
+        }
+
+        .header div {
+            font-size: 25px;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px 0px;
+            background-color: rgb(249, 249, 249);
+        }
+
+        .header p span a {
+            color: rgb(62, 62, 62);
+            text-decoration: none;
+        }
+
+        .left {
+            position: absolute;
+            border-radius: 25px;
+            left: 30px;
+            top: 9px;
+        }
+
+        .left img {
+            width: 46px;
+            border-radius: 23px;
+            box-shadow: 0px 0px 10px rgb(0, 0, 0);
+        }
+
+        .logoname {
+            float: left;
+            margin: 15.5px 95px;
+            font-size: 30px;
+            font-weight: bolder;
+            text-shadow: 0px 0px 10px black;
+        }
+
+        .mid {
+            border: 2px solid rgb(62, 62, 62);
+            width: 50%;
+            margin: auto;
+            box-sizing: border-box;
+        }
+
+        .nav {
+            background-color: rgb(62, 62, 62);
+            position: sticky;
+            top: 0px;
+        }
+
+        .navbar {
+            padding-left: 0px;
+            text-align: center;
+        }
+
+        .navbar li {
+            display: inline-block;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 0px 20px;
+            font-size: 22px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            color: rgb(225, 178, 136);
+            text-shadow: 0px 0px 10px rgb(0, 0, 0);
+
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 14px;
+        }
+
+        .acct {
+            color: white;
+            text-decoration: none;
+            float: right;
+            margin-top: 5px;
+            margin-left: 35px;
+            font-size: 19px;
+        }
+
+        .acct:hover {
+            color: rgb(225, 178, 136);
+            text-shadow: 0px 0px 10px rgb(0, 0, 0);
+        }
+
+        .fa-regular {
+            margin-right: 12px;
+        }
+
+        .container {
+            border: solid rgb(255, 255, 255) 5px;
+            text-align: center;
+            font-size: 20px;
+            background-color: rgba(255, 215, 179, 0.25);
+            padding: 45px;
+            margin: 70px 50px;
+            width: 13%;
+            border-radius: 10px;
+        }
+
+        .container h1 {
+            margin-bottom: 30px;
+            margin-top: 0px;
+            font-weight: bold;
+        }
+
+        .form-grp {
+            margin: 10px 0px;
+        }
+
+        .form-grp1 {
+            display: inline-block;
+        }
+
+        input[type=text],
+        input[type=email],
+        input[type=password],
+        textarea {
+            background-color: rgb(40, 40, 40);
+            border-radius: 5px;
+            color: white;
+            font-size: 12px;
+            caret-color: transparent;
+            border: none;
+            height: 30px;
+            width: 180px;
+            padding: 0px 10px;
+            box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
+        }
+
+        input[type=text]:focus,
+        input[type=email]:focus,
+        input[type=password]:focus textarea:focus {
+            border: 3px solid rgb(255, 255, 255);
+            -webkit-transition: .1s;
+            transition: .1s;
+            outline: none;
+        }
+
+        .name input {
+            width: 83px;
+            margin: 0px 3px;
+        }
+
+        .address textarea {
+            padding-top: 8px;
+            padding-bottom: 8px;
+            height: 80px;
+            resize: none;
+        }
+
+        select {
+            font-family: 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
+            background-color: rgb(40, 40, 40);
+            border: none;
+            color: rgb(225, 178, 136);
+            border-radius: 5px;
+
+            padding: 0px 4px;
+            height: 30px;
+            width: 180px;
+
+            font-size: 12px;
+        }
+
+        select:focus {
+            border: 3px solid rgb(255, 255, 255);
+            -webkit-transition: .1s;
+            transition: .1s;
+            outline: none;
+        }
+
+        input::placeholder {
+            font-size: 12px;
+            color: rgb(225, 178, 136);
+        }
+
+        textarea::placeholder {
+            font-size: 12px;
+            padding-top: 8px;
+            color: rgb(225, 178, 136);
+        }
+
+        input:focus,
+        textarea:focus {
+            color: rgb(225, 178, 136);
+        }
+
+        .register button {
+            height: 40px;
+            width: 180px;
+            margin-top: 10px;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: transparent;
+            color: rgb(225, 178, 136);
+            text-shadow: 0px 0px 10px black;
+            border: 4px solid rgb(40, 40, 40);
+            border-radius: 8px;
+            text-decoration: none;
+        }
+
+        .register button:hover {
+            background-color: rgb(40, 40, 40);
+            color: rgb(225, 178, 136);
+            text-shadow: 0px 0px 10px rgb(0, 0, 0);
+            cursor: pointer;
+            -webkit-transition: .1s;
+            transition: .1s;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <p>We’ve updated our&nbsp;
+            <span class="rich">
+                <a class="MuiTypography-root-432 MuiLink-root-427 MuiLink-underlineAlways-430 MuiTypography-colorPrimary-455"
+                    href="https://www.planetfitness.com/terms-use">Terms of Use
+                </a>
+            </span>
+            &nbsp;and our&nbsp;
+            <span class="rich-text-link">
+                <a class="MuiTypography-root-432 MuiLink-root-427 MuiLink-underlineAlways-430 MuiTypography-colorPrimary-455"
+                    href="https://www.planetfitness.com/privacy-policy">Privacy Policy
+                </a>
+            </span>&nbsp;with important
+            information about how we use your data, how we share your data with partners, and your privacy options. Your
+            use of this website is subject to these revised terms.
+        </p>
+        <div>COVID-19 FAQs | Our Commitment to Clean</div>
+    </header>
+
+    <div class="nav">
+        <div class="left">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <div class="logoname">ZEUS Fitness</div>
+
+        <!-- NAVBAR -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="fitness.html">Fitness</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="store.html">Store</a></li>
+            </ul>
+        </div>
+
+        <!-- BUTTTON   -->
+        <div class="right">
+            <a href="acct.html" class="acct"><i class="fa-regular fa-user"></i>My Account</a>
+            <a href="join.html" class="acct">Free Trial</a>
+        </div>
+    </div>
+
+    <div>
+        <div class="container">
+            <h1>JOIN US</h1>
+            <div class="form-grp1">
+                <form class="name" action="form.php"><input type="text" name="" placeholder="First Name"></form>
+            </div>
+            <div class="form-grp1">
+                <form class="name" action="form.php"><input type="text" name="" placeholder="Last Name"></form>
+            </div>
+            <div class="form-grp">
+                <form action="form.php"><input type="text" name="" placeholder="Phone Number"></form>
+            </div>
+            <div class="form-grp">
+                <select id="gender" name="gender">
+                    <option selected value>Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Non-Binary</option>
+                </select>
+            </div>
+            <div class="form-grp">
+                <form class="address" action="form.php"><textarea rows="5" cols="60" name=""
+                        placeholder="Address"></textarea></form>
+            </div>
+            <div class="form-grp">
+                <form action="form.php"><input type="email" name="" placeholder="Email ID"></form>
+            </div>
+
+            <div class="form-grp">
+                <form action="form.php"><input type="password" name="" placeholder="Set password"></form>
+            </div>
+
+            <div class="form-grp">
+                <form action="form.php"><input type="password" name="" placeholder="Confirm password"></form>
+            </div>
+            <a class="register" href="register.html"><button class="btn"> Register</button></a>
+        </div>
+    </div>
+
+</body>
+
+</html>

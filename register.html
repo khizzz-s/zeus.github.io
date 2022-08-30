@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBSITE 1</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/8a12675bf6.js" crossorigin="anonymous"></script>
+
+    <style>
+        /* CSS RESET */
+        body {
+            margin: 0px;
+            padding: 0px;
+            background-color: rgb(225, 178, 136);
+
+            background-position: 0px 146px;
+
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
+        }
+
+        .header {
+            background: rgb(225, 178, 136);
+            box-sizing: inherit;
+        }
+
+        p {
+            text-decoration: none;
+            text-align: center;
+            padding: 10px 5px;
+            font-size: 14px;
+            margin: 0px;
+        }
+
+        .header div {
+            font-size: 25px;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px 0px;
+            background-color: rgb(249, 249, 249);
+        }
+
+        .header p span a {
+            color: rgb(62, 62, 62);
+            text-decoration: none;
+        }
+
+        .left {
+            position: absolute;
+            border-radius: 25px;
+            left: 30px;
+            top: 9px;
+        }
+
+        .left img {
+            width: 46px;
+            border-radius: 23px;
+            box-shadow: 0px 0px 10px rgb(0, 0, 0);
+        }
+
+        .logoname {
+            float: left;
+            margin: 15.5px 95px;
+            font-size: 30px;
+            font-weight: bolder;
+            text-shadow: 0px 0px 10px black;
+        }
+
+        .mid {
+            border: 2px solid rgb(62, 62, 62);
+            width: 50%;
+            margin: auto;
+            box-sizing: border-box;
+        }
+
+        .nav {
+            background-color: rgb(62, 62, 62);
+            position: sticky;
+            top: 0px;
+        }
+
+        .navbar {
+            padding-left: 0px;
+            text-align: center;
+        }
+
+        .navbar li {
+            display: inline-block;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 0px 20px;
+            font-size: 22px;
+        }
+
+        .navbar li a:hover {
+            color: rgb(225, 178, 136);
+            text-shadow: 0px 0px 10px rgb(0, 0, 0);
+
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 14px;
+        }
+
+        .acct {
+            color: white;
+            text-decoration: none;
+            float: right;
+            margin-top: 5px;
+            margin-left: 35px;
+            font-size: 19px;
+        }
+
+        .acct:hover {
+            color: rgb(225, 178, 136);
+            text-shadow: 0px 0px 10px rgb(0, 0, 0);
+        }
+
+        .fa-regular {
+            margin-right: 12px;
+        }
+
+        .message div {
+            margin: 50px auto;
+            border: solid rgb(255, 255, 255) 5px;
+            border-radius: 10px;
+            text-align: center;
+            background-color: rgb(225, 178, 136);
+            width: 800px;
+        }
+
+        .message div h1 {
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        #msg {
+            font-size: 25px;
+            color: rgb(62, 62, 62);
+            font-weight: bold;
+        }
+
+        #note {
+            width: 85%;
+            margin: 20px auto;
+            color: rgb(62, 62, 62);
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 33.5px;
+        }
+
+        #end {
+            margin: 20px auto;
+            color: rgb(62, 62, 62);
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 33.5px;
+        }
+
+        .back a {
+            text-decoration: none;
+            border: 5px solid rgb(62, 62, 62);
+            color: rgb(62, 62, 62);
+            font-size: 22px;
+            font-weight: bold;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        
+        .back a:hover {
+            text-decoration:underline;
+            font-size: 22px;
+            font-weight: bold;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <p>We’ve updated our&nbsp;
+            <span class="rich">
+                <a class="MuiTypography-root-432 MuiLink-root-427 MuiLink-underlineAlways-430 MuiTypography-colorPrimary-455"
+                    href="https://www.planetfitness.com/terms-use">Terms of Use
+                </a>
+            </span>
+            &nbsp;and our&nbsp;
+            <span class="rich-text-link">
+                <a class="MuiTypography-root-432 MuiLink-root-427 MuiLink-underlineAlways-430 MuiTypography-colorPrimary-455"
+                    href="https://www.planetfitness.com/privacy-policy">Privacy Policy
+                </a>
+            </span>&nbsp;with important
+            information about how we use your data, how we share your data with partners, and your privacy options. Your
+            use of this website is subject to these revised terms.
+        </p>
+        <div>COVID-19 FAQs | Our Commitment to Clean</div>
+    </header>
+
+    <div class="nav">
+        <div class="left">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <div class="logoname">ZEUS Fitness</div>
+
+        <!-- NAVBAR -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fitness.html">Fitness</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="store.html">Store</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- MESSAGE -->
+    <div class="message">
+        <div class="container">
+            <h1>Congratulations!</h1>
+            <p id="msg">You have succesfully registered into our ZEUS Gym.</p>
+            <p id="note">You would be receiving a package shortly consisting of instruction manuals for the gym and also
+                your Gym ID, on the address you have provided to us.&nbsp;We recommend you take take good care of ID as
+                it will be required to enter into the gym.&nbsp;</p>
+            <p id="end">Looking forward for a Prosperous and Healthy together</p>
+
+
+        </div>
+    </div>
+    <div class="back">
+        <p><a href="index.html">Continue >></a></p>
+    </div>
+
+
+</body>
+
+</html>
